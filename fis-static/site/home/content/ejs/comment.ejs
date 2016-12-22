@@ -1,0 +1,12 @@
+<%for (var i=0;i<data.length;i++){%>
+<li>
+    <img src="http://img5.cache.netease.com/tie/images/noface80_80.png" alt="">
+    <div class="cmtdes">
+        <h5><%= data[i].username%><span><%= tools.formatUnixTime(data[i].addtime, "yyyy-MM-dd hh:mm:ss")%></span></h5>
+        <p>
+            <%= data[i].content%>
+        </p>
+    </div>
+    <div style="clear:both;"></div>
+</li>
+<%}%>

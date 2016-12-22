@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>KindEditor Unittest</title>		<!-- <script src="../lib/firebug-lite/build/firebug-lite.js#startOpened"></script> -->		<!-- include src files -->	
+    <link rel="stylesheet" href="/static/widget/kindeditor/lib/qunit/qunit.css" />
+</head>
+	<body>
+		<h1 id="qunit-header">KindEditor Unittest</h1>
+		<h2 id="qunit-userAgent"></h2>
+		<ol id="qunit-tests"></ol>
+
+		<!-- test data 01 -->
+		<div id="test-data-01" class="test-class" style="display:none;">
+			<p>abcd<strong>efg</strong>hijk<img src="/static/widget/kindeditor/test/data/logo_180_30.gif" border="0" />xyz<br />
+01<span style="color:red;font-size:14px;">23456</span>789<br /></p>
+			<div>div area</div>
+			<div id="escaped-id:.">div area 2</div>
+			<input type="text"  name="escaped-name:." value="" />
+		</div>
+
+		<!-- include test files -->	
+<script type="text/javascript" src="/static/node_modules/process/browser.js"></script>
+<script src="/static/widget/kindeditor/lib/qunit/qunit.js"></script>
+<script src="/static/widget/kindeditor/src/core.js"></script>
+<script src="/static/widget/kindeditor/src/config.js"></script>
+<script src="/static/widget/kindeditor/src/event.js"></script>
+<script src="/static/widget/kindeditor/src/html.js"></script>
+<script src="/static/widget/kindeditor/src/selector.js"></script>
+<script src="/static/widget/kindeditor/src/node.js"></script>
+<script src="/static/widget/kindeditor/src/range.js"></script>
+<script src="/static/widget/kindeditor/src/cmd.js"></script>
+<script src="/static/widget/kindeditor/test/cmd.js"></script>
+</body>
+</html>

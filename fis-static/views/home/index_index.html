@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="import" href="/widget/home-meta/meta.html?__inline">
+    <link rel="stylesheet" href="/site/home/index/index.less">
+</head>
+<ul class="menu">
+    <%for(var i=0;i<node.length;i++) {%>
+        <li>
+            <a href="<%= node[i].link%>">
+                <%= node[i].name%>
+            </a>
+        </li>
+        <%}%>
+</ul>
+
+<%for(var i=0;i<node.length;i++) {%>
+<div class="articlelist">
+  <h2><%= node[i].name%></h2>
+  <ul>
+    <% var data = article[i+1].msg;%>
+    <%for(var j=0; j < data.length; j++) {%>
+      <li><a href="<%= data[j].link%>"><%= data[j].title%></a></li>
+    <%}%>
+  </ul>
+</div>
+<%}%>
+
+<body>
+    <div id="app"></div>
+    <!-- <script src="//cdn.bootcss.com/vue/2.0.3/vue.min.js"></script> -->
+    <!-- <script id="ssr" src="/site/home/index/app.js"></script> -->
+    <!-- 此处根据id="ssr"获取服务端渲染脚本-->
+    <script>
+        // app.$mount("#app");asd
+        var index = require("site/home/index/index");
+        index.init();
+        var g = require("globle/globle");
+
+      require("main");
+    </script>
+</body>
+
+</html>

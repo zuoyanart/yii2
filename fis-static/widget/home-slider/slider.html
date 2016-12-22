@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="./slider.less">
+<div class="slider" id="slider">
+  <ul class="slider-sliders">
+    <li>
+      <a href="" style="background-image:url(banner44.jpg)">&nbsp;</a>
+    </li>
+    <li>
+      <a href="" style="background-image:url(banner44.jpg)">&nbsp;</a>
+    </li>
+    <li>
+      <a href="" style="background-image:url(banner44.jpg)">&nbsp;</a>
+    </li>
+    <li>
+      <a href="" style="background-image:url(banner44.jpg)">&nbsp;</a>
+    </li>
+  </ul>
+</div>
+<script type="text/javascript">
+  var slider = require("home-slider");
+  var slid = new slider({
+    obj: "#slider",
+    ispc: false, //是否pc浏览器
+    interval: 3000, //时间间隔
+    autoplay: true, //自动轮转
+    edgeFriction: 0.15, //非循环 slider 滚动到边缘时阻尼
+    infinite: true, //无限循环模式
+    pauseOnHove: true, //悬停是否停止
+    arrows: false, //是否有箭头
+    dots: true //是否显示圆点
+  });
+  slid.init();
+</script>

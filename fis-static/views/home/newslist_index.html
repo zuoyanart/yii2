@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="import" href="/widget/home-meta/meta.html?__inline">
+  <link rel="stylesheet" href="/site/home/newslist/newslist.less">
+</head>
+<body>
+  <div class="main">
+    <ul>
+      <%for(var i=0;i<nodelist.length;i++) {%>
+        <li><a href="<%= nodelist[i].link%>"><%= nodelist[i].name%></a></li>
+      <%}%>
+    </ul>
+    <div class="right">
+      <div class="src">
+        <%for(var i=0;i<crumbs.length;i++) {%>
+          <a href="<%= crumbs[i].link%>"><%= crumbs[i].name%></a> >
+        <%}%>详细
+      </div>
+      <ul class="list">
+        <%for(var i=0;i<news.length;i++) {%>
+        <li><a href="<%= news[i].link%>" target="_blank"><%= news[i].title%></a></li>
+        <%}%>
+      </ul>
+      <%- tp%>
+    </div>
+  </div>
+</body>
+
+</html>

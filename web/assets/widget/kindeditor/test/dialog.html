@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>KindEditor Dialog Test</title>		<!-- <script src="../lib/firebug-lite/build/firebug-lite.js#startOpened"></script> -->	
+    <link rel="stylesheet" href="/static/widget/kindeditor/lib/qunit/qunit.css" />
+    <link rel="stylesheet" href="/static/widget/kindeditor/themes/default/default.css" />
+</head>
+	<body>
+		<h1>KindEditor Dialog Test</h1>
+		<input type="button" id="create1" value="Create" />
+		<input type="button" id="create2" value="Create(no shadow)" />
+		<div style="height:2000px;"></div>	
+<script type="text/javascript" src="/static/node_modules/process/browser.js"></script>
+<script src="/static/widget/kindeditor/lib/qunit/qunit.js"></script>
+<script src="/static/widget/kindeditor/lib/jquery.min.js"></script>
+<script src="/static/widget/kindeditor/src/core.js"></script>
+<script src="/static/widget/kindeditor/src/config.js"></script>
+<script src="/static/widget/kindeditor/src/event.js"></script>
+<script src="/static/widget/kindeditor/src/html.js"></script>
+<script src="/static/widget/kindeditor/src/selector.js"></script>
+<script src="/static/widget/kindeditor/src/node.js"></script>
+<script src="/static/widget/kindeditor/src/range.js"></script>
+<script src="/static/widget/kindeditor/src/cmd.js"></script>
+<script src="/static/widget/kindeditor/src/widget.js"></script>
+<script src="/static/widget/kindeditor/src/edit.js"></script>
+<script src="/static/widget/kindeditor/src/toolbar.js"></script>
+<script src="/static/widget/kindeditor/src/dialog.js"></script>
+<script src="/static/widget/kindeditor/src/main.js"></script>
+<script src="/static/widget/kindeditor/lang/zh-CN.js"></script>
+<script>
+			K('#create1').click(function() {
+				var dialog = K.dialog({
+					width : 500,
+					title : '测试窗口',
+					body : '<div style="margin:10px;"><strong>内容</strong></div>',
+					closeBtn : {
+						name : '关闭',
+						click : function(e) {
+							dialog.remove();
+						}
+					},
+					yesBtn : {
+						name : '确定',
+						click : function(e) {
+							alert(this.value);
+						}
+					},
+					noBtn : {
+						name : '取消',
+						click : function(e) {
+							dialog.remove();
+						}
+					}
+				});
+			});
+			K('#create2').click(function() {
+				var dialog = K.dialog({
+					width : 500,
+					title : '测试窗口',
+					body : '<div style="margin:10px;"><strong>内容</strong></div>',
+					shadowMode : false,
+					closeBtn : {
+						name : '关闭',
+						click : function(e) {
+							dialog.remove();
+						}
+					},
+					noBtn : {
+						name : '取消',
+						click : function(e) {
+							dialog.remove();
+						}
+					}
+				});
+			});
+			K('#create1').click();
+		</script>
+</body>
+</html>

@@ -1,0 +1,895 @@
+{
+    "res": {
+        "css/iconfont.css": {
+            "uri": "/static/css/iconfont.css",
+            "type": "css"
+        },
+        "css/pizza.css": {
+            "uri": "/static/css/pizza.css",
+            "type": "css"
+        },
+        "css/variables.css": {
+            "uri": "/static/css/variables.css",
+            "type": "css"
+        },
+        "lib/ejs.js": {
+            "uri": "/static/lib/ejs.js",
+            "type": "js"
+        },
+        "lib/mod.js": {
+            "uri": "/static/lib/mod.js",
+            "type": "js"
+        },
+        "laydate": {
+            "uri": "/static/modules/laydate/laydate.js",
+            "type": "js"
+        },
+        "modules/laydate/need/laydate.css": {
+            "uri": "/static/modules/laydate/need/laydate.css",
+            "type": "css"
+        },
+        "modules/laydate/skins/danlan/laydate.css": {
+            "uri": "/static/modules/laydate/skins/danlan/laydate.css",
+            "type": "css"
+        },
+        "layer": {
+            "uri": "/static/modules/layer/skin/layer.js",
+            "type": "js",
+            "deps": [
+                "node_modules/jquery/dist/jquery.min.js"
+            ]
+        },
+        "modules/layer/skin/layer.css": {
+            "uri": "/static/modules/layer/skin/layer.css",
+            "type": "css"
+        },
+        "modules/layer/skin/layer.ext.css": {
+            "uri": "/static/modules/layer/skin/layer.ext.css",
+            "type": "css"
+        },
+        "pizzalayer": {
+            "uri": "/static/modules/pizzalayer/layer.js",
+            "type": "js",
+            "deps": [
+                "node_modules/jquery/dist/jquery.min.js"
+            ]
+        },
+        "pizzatools": {
+            "uri": "/static/modules/pizzatools/pizza.tools.js",
+            "type": "js",
+            "extras": {},
+            "deps": [
+                "node_modules/babel-polyfill/dist/polyfill.min.js",
+                "node_modules/superagent/superagent.js",
+                "node_modules/vue-layer/dist/vue-layer.js",
+                "node_modules/jquery/dist/jquery.min.js",
+                "pizzalayer"
+            ]
+        },
+        "pizzaui": {
+            "uri": "/static/modules/pizzaui/pizza.ui.js",
+            "type": "js",
+            "deps": [
+                "node_modules/jquery/dist/jquery.min.js",
+                "pizzatools",
+                "pizzalayer"
+            ]
+        },
+        "store": {
+            "uri": "/static/modules/store/pizza.ui.store.js",
+            "type": "js"
+        },
+        "xss": {
+            "uri": "/static/modules/xss/xss.js",
+            "type": "js",
+            "deps": [
+                "node_modules/process/browser.js",
+                "cssfilter",
+                "./util",
+                "./default",
+                "./parser",
+                "./css"
+            ]
+        },
+        "sass/variables.scss": {
+            "uri": "/static/sass/variables.css",
+            "type": "css"
+        },
+        "site/admin/App.vue": {
+            "uri": "/static/site/admin/App.js",
+            "type": "js",
+            "deps": [
+                "pizzatools",
+                "site/admin/App-0.css",
+                "site/admin/App-1.css"
+            ]
+        },
+        "site/admin/App-0.css": {
+            "uri": "/static/site/admin/App-0.css",
+            "type": "css"
+        },
+        "site/admin/App-1.css": {
+            "uri": "/static/site/admin/App-1.css",
+            "type": "css"
+        },
+        "site/admin/assets/sass/base.scss": {
+            "uri": "/static/site/admin/assets/sass/base.css",
+            "type": "css"
+        },
+        "site/admin/assets/sass/index.scss": {
+            "uri": "/static/site/admin/assets/sass/index.css",
+            "type": "css"
+        },
+        "site/admin/assets/sass/var.scss": {
+            "uri": "/static/site/admin/assets/sass/var.css",
+            "type": "css"
+        },
+        "site/admin/base.scss": {
+            "uri": "/static/site/admin/base.css",
+            "type": "css"
+        },
+        "site/admin/components/list/list.vue": {
+            "uri": "/static/site/admin/components/list/list.js",
+            "type": "js",
+            "deps": [
+                "node_modules/pzvue-checkbox/dist/pz-checkbox.js"
+            ]
+        },
+        "site/admin/components/tree/tree-item.vue": {
+            "uri": "/static/site/admin/components/tree/tree-item.js",
+            "type": "js"
+        },
+        "site/admin/components/tree/tree.scss": {
+            "uri": "/static/site/admin/components/tree/tree.css",
+            "type": "css"
+        },
+        "site/admin/components/tree/tree.vue": {
+            "uri": "/static/site/admin/components/tree/tree.js",
+            "type": "js",
+            "deps": [
+                "site/admin/components/tree/tree-item.vue",
+                "site/admin/components/tree/tree.css",
+                "site/admin/components/tree/tree.scss"
+            ]
+        },
+        "site/admin/components/tree/tree.css": {
+            "uri": "/static/site/admin/components/tree/tree.css",
+            "type": "css"
+        },
+        "admin/login/login": {
+            "uri": "/static/site/admin/login/login.js",
+            "type": "js",
+            "deps": [
+                "node_modules/jquery/dist/jquery.min.js",
+                "layer",
+                "pizzaui"
+            ]
+        },
+        "site/admin/login/login.scss": {
+            "uri": "/static/site/admin/login/login.css",
+            "type": "css"
+        },
+        "admin/main": {
+            "uri": "/static/site/admin/main.js",
+            "type": "js",
+            "extras": {
+                "async": [
+                    "site/admin/pages/tree/tree.vue",
+                    "site/admin/pages/tree/edit.vue",
+                    "site/admin/pages/news/news.vue",
+                    "site/admin/pages/news/edit.vue",
+                    "site/admin/pages/block/block.vue",
+                    "site/admin/pages/block/edit.vue",
+                    "site/admin/pages/guestbook/guestbook.vue",
+                    "./pages/guestbook/edit.vue",
+                    "site/admin/pages/user/user.vue",
+                    "site/admin/pages/user/edit.vue"
+                ]
+            },
+            "deps": [
+                "node_modules/vue/dist/vue.js",
+                "site/admin/App.vue",
+                "node_modules/vue-router/dist/vue-router.js",
+                "node_modules/vue-layer/dist/vue-layer.js",
+                "site/admin/pages/index.vue"
+            ]
+        },
+        "site/admin/pages/block/block.vue": {
+            "uri": "/static/site/admin/pages/block/block.js",
+            "type": "js",
+            "deps": [
+                "site/admin/components/list/list.vue",
+                "pizzatools"
+            ]
+        },
+        "site/admin/pages/block/edit.vue": {
+            "uri": "/static/site/admin/pages/block/edit.js",
+            "type": "js",
+            "deps": [
+                "node_modules/pzvue-button/dist/pz-button.js",
+                "node_modules/pzvue-select/dist/pz-select.js",
+                "node_modules/pzvue-input/dist/pz-input.js",
+                "node_modules/pzvue-form/dist/pz-form.js",
+                "node_modules/pzvue-formitem/dist/pz-formitem.js",
+                "kindeditor/kindeditor-all",
+                "pizzatools",
+                "node_modules/kindeditor/kindeditor-all.js"
+            ]
+        },
+        "site/admin/pages/guestbook/guestbook.vue": {
+            "uri": "/static/site/admin/pages/guestbook/guestbook.js",
+            "type": "js",
+            "deps": [
+                "site/admin/components/list/list.vue",
+                "pizzatools"
+            ]
+        },
+        "site/admin/pages/index.vue": {
+            "uri": "/static/site/admin/pages/index.js",
+            "type": "js",
+            "deps": [
+                "site/admin/pages/index.css"
+            ]
+        },
+        "site/admin/pages/index.css": {
+            "uri": "/static/site/admin/pages/index.css",
+            "type": "css"
+        },
+        "site/admin/pages/news/edit.vue": {
+            "uri": "/static/site/admin/pages/news/edit.js",
+            "type": "js",
+            "deps": [
+                "node_modules/pzvue-button/dist/pz-button.js",
+                "node_modules/pzvue-select/dist/pz-select.js",
+                "node_modules/pzvue-input/dist/pz-input.js",
+                "node_modules/pzvue-form/dist/pz-form.js",
+                "node_modules/pzvue-formitem/dist/pz-formitem.js",
+                "kindeditor/kindeditor-all",
+                "pizzatools",
+                "node_modules/kindeditor/kindeditor-all.js"
+            ]
+        },
+        "site/admin/pages/news/news.vue": {
+            "uri": "/static/site/admin/pages/news/news.js",
+            "type": "js",
+            "deps": [
+                "site/admin/components/list/list.vue",
+                "pizzatools"
+            ]
+        },
+        "site/admin/pages/tree/edit.vue": {
+            "uri": "/static/site/admin/pages/tree/edit.js",
+            "type": "js",
+            "deps": [
+                "node_modules/pzvue-button/dist/pz-button.js",
+                "node_modules/pzvue-select/dist/pz-select.js",
+                "node_modules/pzvue-input/dist/pz-input.js",
+                "node_modules/pzvue-form/dist/pz-form.js",
+                "node_modules/pzvue-formitem/dist/pz-formitem.js",
+                "kindeditor/kindeditor-all",
+                "pizzatools",
+                "node_modules/kindeditor/kindeditor-all.js"
+            ]
+        },
+        "site/admin/pages/tree/tree.vue": {
+            "uri": "/static/site/admin/pages/tree/tree.js",
+            "type": "js",
+            "deps": [
+                "site/admin/components/tree/tree.vue",
+                "pizzatools"
+            ]
+        },
+        "site/admin/pages/user/edit.vue": {
+            "uri": "/static/site/admin/pages/user/edit.js",
+            "type": "js",
+            "deps": [
+                "node_modules/pzvue-button/dist/pz-button.js",
+                "node_modules/pzvue-select/dist/pz-select.js",
+                "node_modules/pzvue-input/dist/pz-input.js",
+                "node_modules/pzvue-form/dist/pz-form.js",
+                "node_modules/pzvue-formitem/dist/pz-formitem.js",
+                "pizzatools"
+            ]
+        },
+        "site/admin/pages/user/user.vue": {
+            "uri": "/static/site/admin/pages/user/user.js",
+            "type": "js",
+            "deps": [
+                "site/admin/components/list/list.vue",
+                "pizzatools"
+            ]
+        },
+        "site/common/common.css": {
+            "uri": "/static/site/common/common.css",
+            "type": "css"
+        },
+        "common/common": {
+            "uri": "/static/site/common/common.js",
+            "type": "js",
+            "deps": [
+                "node_modules/jquery/dist/jquery.min.js",
+                "pizzaui",
+                "pizzatools"
+            ]
+        },
+        "site/common/common.scss": {
+            "uri": "/static/site/common/common.css",
+            "type": "css"
+        },
+        "home/content/comment": {
+            "uri": "/static/site/home/content/comment.js",
+            "type": "js",
+            "deps": [
+                "node_modules/jquery/dist/jquery.min.js",
+                "pizzatools",
+                "layer",
+                "pizzaui"
+            ]
+        },
+        "site/home/content/content.less": {
+            "uri": "/static/site/home/content/content.css",
+            "type": "css"
+        },
+        "home/index/app": {
+            "uri": "/static/site/home/index/app.js",
+            "type": "js"
+        },
+        "home/index/index": {
+            "uri": "/static/site/home/index/index.js",
+            "type": "js",
+            "deps": [
+                "node_modules/vue/dist/vue.js",
+                "$",
+                "css/variables.css"
+            ]
+        },
+        "site/home/index/index.less": {
+            "uri": "/static/site/home/index/index.css",
+            "type": "css"
+        },
+        "site/home/newslist/newslist.less": {
+            "uri": "/static/site/home/newslist/newslist.css",
+            "type": "css"
+        },
+        "globle/globle": {
+            "uri": "/static/widget/globle/globle.js",
+            "type": "js",
+            "deps": [
+                "node_modules/jquery/dist/jquery.min.js",
+                "pizzatools",
+                "layer",
+                "pizzalayer"
+            ]
+        },
+        "home-globle/globle": {
+            "uri": "/static/widget/home-globle/globle.js",
+            "type": "js",
+            "deps": [
+                "node_modules/jquery/dist/jquery.min.js",
+                "pizzatools",
+                "layer",
+                "pizzalayer"
+            ]
+        },
+        "widget/home-header/header.less": {
+            "uri": "/static/widget/home-header/header.css",
+            "type": "css"
+        },
+        "home-slider/slider": {
+            "uri": "/static/widget/home-slider/slider.js",
+            "type": "js",
+            "deps": [
+                "node_modules/jquery/dist/jquery.min.js"
+            ]
+        },
+        "widget/home-slider/slider.less": {
+            "uri": "/static/widget/home-slider/slider.css",
+            "type": "css"
+        },
+        "kindeditor/Gruntfile": {
+            "uri": "/static/widget/kindeditor/Gruntfile.js",
+            "type": "js",
+            "deps": [
+                "node_modules/process/browser.js"
+            ]
+        },
+        "kindeditor/kindeditor-all-min": {
+            "uri": "/static/widget/kindeditor/kindeditor-all-min.js",
+            "type": "js"
+        },
+        "kindeditor/kindeditor-all": {
+            "uri": "/static/widget/kindeditor/kindeditor-all.js",
+            "type": "js"
+        },
+        "kindeditor/lang/ar": {
+            "uri": "/static/widget/kindeditor/lang/ar.js",
+            "type": "js"
+        },
+        "kindeditor/lang/en": {
+            "uri": "/static/widget/kindeditor/lang/en.js",
+            "type": "js"
+        },
+        "kindeditor/lang/ko": {
+            "uri": "/static/widget/kindeditor/lang/ko.js",
+            "type": "js"
+        },
+        "kindeditor/lang/ru": {
+            "uri": "/static/widget/kindeditor/lang/ru.js",
+            "type": "js"
+        },
+        "kindeditor/lang/zh-CN": {
+            "uri": "/static/widget/kindeditor/lang/zh-CN.js",
+            "type": "js"
+        },
+        "kindeditor/lang/zh-TW": {
+            "uri": "/static/widget/kindeditor/lang/zh-TW.js",
+            "type": "js"
+        },
+        "kindeditor/lib/firebug-lite/build/chrome-extension-beta/contentScript": {
+            "uri": "/static/widget/kindeditor/lib/firebug-lite/build/chrome-extension-beta/contentScript.js",
+            "type": "js"
+        },
+        "kindeditor/lib/firebug-lite/build/chrome-extension-beta/firebug-lite-beta": {
+            "uri": "/static/widget/kindeditor/lib/firebug-lite/build/chrome-extension-beta/firebug-lite-beta.js",
+            "type": "js"
+        },
+        "kindeditor/lib/firebug-lite/build/chrome-extension-beta/googleChrome": {
+            "uri": "/static/widget/kindeditor/lib/firebug-lite/build/chrome-extension-beta/googleChrome.js",
+            "type": "js"
+        },
+        "widget/kindeditor/lib/firebug-lite/build/chrome-extension-beta/skin/xp/firebug-1.3a2.css": {
+            "uri": "/static/widget/kindeditor/lib/firebug-lite/build/chrome-extension-beta/skin/xp/firebug-1.3a2.css",
+            "type": "css"
+        },
+        "widget/kindeditor/lib/firebug-lite/build/chrome-extension-beta/skin/xp/firebug.css": {
+            "uri": "/static/widget/kindeditor/lib/firebug-lite/build/chrome-extension-beta/skin/xp/firebug.css",
+            "type": "css"
+        },
+        "widget/kindeditor/lib/firebug-lite/build/chrome-extension-beta/skin/xp/firebug.IE6.css": {
+            "uri": "/static/widget/kindeditor/lib/firebug-lite/build/chrome-extension-beta/skin/xp/firebug.IE6.css",
+            "type": "css"
+        },
+        "kindeditor/lib/firebug-lite/build/chrome-extension/contentScript": {
+            "uri": "/static/widget/kindeditor/lib/firebug-lite/build/chrome-extension/contentScript.js",
+            "type": "js"
+        },
+        "kindeditor/lib/firebug-lite/build/chrome-extension/firebug-lite": {
+            "uri": "/static/widget/kindeditor/lib/firebug-lite/build/chrome-extension/firebug-lite.js",
+            "type": "js"
+        },
+        "kindeditor/lib/firebug-lite/build/chrome-extension/googleChrome": {
+            "uri": "/static/widget/kindeditor/lib/firebug-lite/build/chrome-extension/googleChrome.js",
+            "type": "js"
+        },
+        "widget/kindeditor/lib/firebug-lite/build/chrome-extension/skin/xp/firebug-1.3a2.css": {
+            "uri": "/static/widget/kindeditor/lib/firebug-lite/build/chrome-extension/skin/xp/firebug-1.3a2.css",
+            "type": "css"
+        },
+        "widget/kindeditor/lib/firebug-lite/build/chrome-extension/skin/xp/firebug.css": {
+            "uri": "/static/widget/kindeditor/lib/firebug-lite/build/chrome-extension/skin/xp/firebug.css",
+            "type": "css"
+        },
+        "widget/kindeditor/lib/firebug-lite/build/chrome-extension/skin/xp/firebug.IE6.css": {
+            "uri": "/static/widget/kindeditor/lib/firebug-lite/build/chrome-extension/skin/xp/firebug.IE6.css",
+            "type": "css"
+        },
+        "kindeditor/lib/firebug-lite/build/firebug-lite-beta": {
+            "uri": "/static/widget/kindeditor/lib/firebug-lite/build/firebug-lite-beta.js",
+            "type": "js"
+        },
+        "kindeditor/lib/firebug-lite/build/firebug-lite-debug": {
+            "uri": "/static/widget/kindeditor/lib/firebug-lite/build/firebug-lite-debug.js",
+            "type": "js"
+        },
+        "kindeditor/lib/firebug-lite/build/firebug-lite": {
+            "uri": "/static/widget/kindeditor/lib/firebug-lite/build/firebug-lite.js",
+            "type": "js"
+        },
+        "widget/kindeditor/lib/firebug-lite/skin/classic/firebug.css": {
+            "uri": "/static/widget/kindeditor/lib/firebug-lite/skin/classic/firebug.css",
+            "type": "css"
+        },
+        "widget/kindeditor/lib/firebug-lite/skin/light/firebug.css": {
+            "uri": "/static/widget/kindeditor/lib/firebug-lite/skin/light/firebug.css",
+            "type": "css"
+        },
+        "widget/kindeditor/lib/firebug-lite/skin/xp/firebug-1.3a2.css": {
+            "uri": "/static/widget/kindeditor/lib/firebug-lite/skin/xp/firebug-1.3a2.css",
+            "type": "css"
+        },
+        "widget/kindeditor/lib/firebug-lite/skin/xp/firebug.css": {
+            "uri": "/static/widget/kindeditor/lib/firebug-lite/skin/xp/firebug.css",
+            "type": "css"
+        },
+        "widget/kindeditor/lib/firebug-lite/skin/xp/firebug.IE6.css": {
+            "uri": "/static/widget/kindeditor/lib/firebug-lite/skin/xp/firebug.IE6.css",
+            "type": "css"
+        },
+        "kindeditor/lib/jquery.min": {
+            "uri": "/static/widget/kindeditor/lib/jquery.min.js",
+            "type": "js"
+        },
+        "widget/kindeditor/lib/qunit/qunit.css": {
+            "uri": "/static/widget/kindeditor/lib/qunit/qunit.css",
+            "type": "css"
+        },
+        "kindeditor/lib/qunit/qunit": {
+            "uri": "/static/widget/kindeditor/lib/qunit/qunit.js",
+            "type": "js",
+            "deps": [
+                "node_modules/process/browser.js"
+            ]
+        },
+        "kindeditor/plugins/anchor/anchor": {
+            "uri": "/static/widget/kindeditor/plugins/anchor/anchor.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/autoheight/autoheight": {
+            "uri": "/static/widget/kindeditor/plugins/autoheight/autoheight.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/baidumap/baidumap": {
+            "uri": "/static/widget/kindeditor/plugins/baidumap/baidumap.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/clearhtml/clearhtml": {
+            "uri": "/static/widget/kindeditor/plugins/clearhtml/clearhtml.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/code/code": {
+            "uri": "/static/widget/kindeditor/plugins/code/code.js",
+            "type": "js"
+        },
+        "widget/kindeditor/plugins/code/prettify.css": {
+            "uri": "/static/widget/kindeditor/plugins/code/prettify.css",
+            "type": "css"
+        },
+        "kindeditor/plugins/code/prettify": {
+            "uri": "/static/widget/kindeditor/plugins/code/prettify.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/emoticons/emoticons": {
+            "uri": "/static/widget/kindeditor/plugins/emoticons/emoticons.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/filemanager/filemanager": {
+            "uri": "/static/widget/kindeditor/plugins/filemanager/filemanager.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/flash/flash": {
+            "uri": "/static/widget/kindeditor/plugins/flash/flash.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/image/image": {
+            "uri": "/static/widget/kindeditor/plugins/image/image.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/insertfile/insertfile": {
+            "uri": "/static/widget/kindeditor/plugins/insertfile/insertfile.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/lineheight/lineheight": {
+            "uri": "/static/widget/kindeditor/plugins/lineheight/lineheight.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/link/link": {
+            "uri": "/static/widget/kindeditor/plugins/link/link.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/map/map": {
+            "uri": "/static/widget/kindeditor/plugins/map/map.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/media/media": {
+            "uri": "/static/widget/kindeditor/plugins/media/media.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/multiimage/multiimage": {
+            "uri": "/static/widget/kindeditor/plugins/multiimage/multiimage.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/pagebreak/pagebreak": {
+            "uri": "/static/widget/kindeditor/plugins/pagebreak/pagebreak.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/plainpaste/plainpaste": {
+            "uri": "/static/widget/kindeditor/plugins/plainpaste/plainpaste.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/preview/preview": {
+            "uri": "/static/widget/kindeditor/plugins/preview/preview.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/quickformat/quickformat": {
+            "uri": "/static/widget/kindeditor/plugins/quickformat/quickformat.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/table/table": {
+            "uri": "/static/widget/kindeditor/plugins/table/table.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/template/template": {
+            "uri": "/static/widget/kindeditor/plugins/template/template.js",
+            "type": "js"
+        },
+        "kindeditor/plugins/wordpaste/wordpaste": {
+            "uri": "/static/widget/kindeditor/plugins/wordpaste/wordpaste.js",
+            "type": "js"
+        },
+        "kindeditor/src/ajax": {
+            "uri": "/static/widget/kindeditor/src/ajax.js",
+            "type": "js"
+        },
+        "kindeditor/src/cmd": {
+            "uri": "/static/widget/kindeditor/src/cmd.js",
+            "type": "js"
+        },
+        "kindeditor/src/colorpicker": {
+            "uri": "/static/widget/kindeditor/src/colorpicker.js",
+            "type": "js"
+        },
+        "kindeditor/src/config": {
+            "uri": "/static/widget/kindeditor/src/config.js",
+            "type": "js"
+        },
+        "kindeditor/src/core": {
+            "uri": "/static/widget/kindeditor/src/core.js",
+            "type": "js"
+        },
+        "kindeditor/src/dialog": {
+            "uri": "/static/widget/kindeditor/src/dialog.js",
+            "type": "js"
+        },
+        "kindeditor/src/edit": {
+            "uri": "/static/widget/kindeditor/src/edit.js",
+            "type": "js"
+        },
+        "kindeditor/src/event": {
+            "uri": "/static/widget/kindeditor/src/event.js",
+            "type": "js"
+        },
+        "kindeditor/src/footer": {
+            "uri": "/static/widget/kindeditor/src/footer.js",
+            "type": "js"
+        },
+        "kindeditor/src/header": {
+            "uri": "/static/widget/kindeditor/src/header.js",
+            "type": "js"
+        },
+        "kindeditor/src/html": {
+            "uri": "/static/widget/kindeditor/src/html.js",
+            "type": "js"
+        },
+        "kindeditor/src/main": {
+            "uri": "/static/widget/kindeditor/src/main.js",
+            "type": "js"
+        },
+        "kindeditor/src/menu": {
+            "uri": "/static/widget/kindeditor/src/menu.js",
+            "type": "js"
+        },
+        "kindeditor/src/node": {
+            "uri": "/static/widget/kindeditor/src/node.js",
+            "type": "js"
+        },
+        "kindeditor/src/range": {
+            "uri": "/static/widget/kindeditor/src/range.js",
+            "type": "js"
+        },
+        "kindeditor/src/selector": {
+            "uri": "/static/widget/kindeditor/src/selector.js",
+            "type": "js"
+        },
+        "kindeditor/src/tabs": {
+            "uri": "/static/widget/kindeditor/src/tabs.js",
+            "type": "js"
+        },
+        "kindeditor/src/toolbar": {
+            "uri": "/static/widget/kindeditor/src/toolbar.js",
+            "type": "js"
+        },
+        "kindeditor/src/uploadbutton": {
+            "uri": "/static/widget/kindeditor/src/uploadbutton.js",
+            "type": "js"
+        },
+        "kindeditor/src/widget": {
+            "uri": "/static/widget/kindeditor/src/widget.js",
+            "type": "js"
+        },
+        "kindeditor/test/cmd": {
+            "uri": "/static/widget/kindeditor/test/cmd.js",
+            "type": "js"
+        },
+        "kindeditor/test/core": {
+            "uri": "/static/widget/kindeditor/test/core.js",
+            "type": "js"
+        },
+        "kindeditor/test/edit": {
+            "uri": "/static/widget/kindeditor/test/edit.js",
+            "type": "js"
+        },
+        "kindeditor/test/editor": {
+            "uri": "/static/widget/kindeditor/test/editor.js",
+            "type": "js"
+        },
+        "kindeditor/test/event": {
+            "uri": "/static/widget/kindeditor/test/event.js",
+            "type": "js"
+        },
+        "kindeditor/test/html": {
+            "uri": "/static/widget/kindeditor/test/html.js",
+            "type": "js"
+        },
+        "kindeditor/test/menu": {
+            "uri": "/static/widget/kindeditor/test/menu.js",
+            "type": "js"
+        },
+        "kindeditor/test/node": {
+            "uri": "/static/widget/kindeditor/test/node.js",
+            "type": "js"
+        },
+        "kindeditor/test/range": {
+            "uri": "/static/widget/kindeditor/test/range.js",
+            "type": "js"
+        },
+        "kindeditor/test/selector": {
+            "uri": "/static/widget/kindeditor/test/selector.js",
+            "type": "js"
+        },
+        "kindeditor/test/toolbar": {
+            "uri": "/static/widget/kindeditor/test/toolbar.js",
+            "type": "js"
+        },
+        "widget/kindeditor/themes/default/default.css": {
+            "uri": "/static/widget/kindeditor/themes/default/default.css",
+            "type": "css"
+        },
+        "widget/kindeditor/themes/qq/qq.css": {
+            "uri": "/static/widget/kindeditor/themes/qq/qq.css",
+            "type": "css"
+        },
+        "widget/kindeditor/themes/simple/simple.css": {
+            "uri": "/static/widget/kindeditor/themes/simple/simple.css",
+            "type": "css"
+        },
+        "widget/meta/meta.css": {
+            "uri": "/static/widget/meta/meta.css",
+            "type": "css"
+        },
+        "widget/meta/meta.scss": {
+            "uri": "/static/widget/meta/meta.css",
+            "type": "css"
+        },
+        "trunpage/trunpage": {
+            "uri": "/static/widget/trunpage/trunpage.js",
+            "type": "js",
+            "deps": [
+                "node_modules/jquery/dist/jquery.min.js"
+            ]
+        },
+        "node_modules/jquery/dist/jquery.min.js": {
+            "uri": "/static/node_modules/jquery/dist/jquery.min.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "node_modules/jquery/dist/jquery.min"
+            }
+        },
+        "node_modules/babel-polyfill/dist/polyfill.min.js": {
+            "uri": "/static/node_modules/babel-polyfill/dist/polyfill.min.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "node_modules/babel-polyfill/dist/polyfill.min"
+            },
+            "deps": [
+                "node_modules/process/browser.js"
+            ]
+        },
+        "node_modules/superagent/superagent.js": {
+            "uri": "/static/node_modules/superagent/superagent.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "node_modules/superagent/superagent"
+            },
+            "deps": [
+                "./is-object",
+                "node_modules/component-emitter/index.js",
+                "./request-base",
+                "./is-function"
+            ]
+        },
+        "node_modules/vue-layer/dist/vue-layer.js": {
+            "uri": "/static/node_modules/vue-layer/dist/vue-layer.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "node_modules/vue-layer/dist/vue-layer"
+            },
+            "deps": [
+                "node_modules/process/browser.js"
+            ]
+        },
+        "node_modules/process/browser.js": {
+            "uri": "/static/node_modules/process/browser.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "node_modules/process/browser"
+            }
+        },
+        "node_modules/pzvue-checkbox/dist/pz-checkbox.js": {
+            "uri": "/static/node_modules/pzvue-checkbox/dist/pz-checkbox.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "node_modules/pzvue-checkbox/dist/pz-checkbox"
+            }
+        },
+        "node_modules/vue/dist/vue.js": {
+            "uri": "/static/node_modules/vue/dist/vue.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "node_modules/vue/dist/vue"
+            }
+        },
+        "node_modules/vue-router/dist/vue-router.js": {
+            "uri": "/static/node_modules/vue-router/dist/vue-router.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "node_modules/vue-router/dist/vue-router"
+            }
+        },
+        "node_modules/pzvue-button/dist/pz-button.js": {
+            "uri": "/static/node_modules/pzvue-button/dist/pz-button.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "node_modules/pzvue-button/dist/pz-button"
+            }
+        },
+        "node_modules/pzvue-select/dist/pz-select.js": {
+            "uri": "/static/node_modules/pzvue-select/dist/pz-select.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "node_modules/pzvue-select/dist/pz-select"
+            }
+        },
+        "node_modules/pzvue-input/dist/pz-input.js": {
+            "uri": "/static/node_modules/pzvue-input/dist/pz-input.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "node_modules/pzvue-input/dist/pz-input"
+            }
+        },
+        "node_modules/pzvue-form/dist/pz-form.js": {
+            "uri": "/static/node_modules/pzvue-form/dist/pz-form.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "node_modules/pzvue-form/dist/pz-form"
+            },
+            "deps": [
+                "node_modules/process/browser.js"
+            ]
+        },
+        "node_modules/pzvue-formitem/dist/pz-formitem.js": {
+            "uri": "/static/node_modules/pzvue-formitem/dist/pz-formitem.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "node_modules/pzvue-formitem/dist/pz-formitem"
+            },
+            "deps": [
+                "node_modules/process/browser.js"
+            ]
+        },
+        "node_modules/kindeditor/kindeditor-all.js": {
+            "uri": "/static/node_modules/kindeditor/kindeditor-all.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "node_modules/kindeditor/kindeditor-all"
+            }
+        },
+        "node_modules/component-emitter/index.js": {
+            "uri": "/static/node_modules/component-emitter/index.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "node_modules/component-emitter/index"
+            }
+        }
+    },
+    "pkg": {}
+}

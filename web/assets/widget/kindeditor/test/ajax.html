@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>KindEditor Tabs Test</title>	
+    <link rel="stylesheet" href="/static/widget/kindeditor/lib/qunit/qunit.css" />
+    <link rel="stylesheet" href="/static/widget/kindeditor/themes/default/default.css" />
+</head>
+	<body>
+		<h1>KindEditor Unittest</h1>
+		<input type="button" id="load" value="Load widget.js" />	
+<script src="/static/widget/kindeditor/lib/firebug-lite/build/firebug-lite.js#startOpened"></script>
+<script type="text/javascript" src="/static/node_modules/process/browser.js"></script>
+<script src="/static/widget/kindeditor/lib/qunit/qunit.js"></script>
+<script src="/static/widget/kindeditor/src/core.js"></script>
+<script src="/static/widget/kindeditor/src/ajax.js"></script>
+<script src="/static/widget/kindeditor/src/config.js"></script>
+<script src="/static/widget/kindeditor/src/event.js"></script>
+<script src="/static/widget/kindeditor/src/html.js"></script>
+<script src="/static/widget/kindeditor/src/selector.js"></script>
+<script src="/static/widget/kindeditor/src/node.js"></script>
+<script>
+			K('#load').click(function() {
+				K.loadScript('../src/widget.js', function() {
+					console.log(K.isFunction(K.widget));
+				});
+			});
+		</script>
+</body>
+</html>

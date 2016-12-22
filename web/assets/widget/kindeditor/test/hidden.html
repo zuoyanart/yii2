@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />		<title>KindEditor Test</title>
+	
+    <link rel="stylesheet" href="/static/widget/kindeditor/themes/default/default.css" />
+</head>
+	<body>
+		<h1 id="type">KindEditor Test</h1>
+		<div id="J_editorArea" style="display:none;">
+			<textarea name="editor1" cols="100" rows="20" style="width:800px;height:200px;"></textarea>
+		</div>
+		<input type="button" id="J_show" value="Show" />
+		<input type="button" id="J_hide" value="Hide" />	
+<script src="/static/widget/kindeditor/src/core.js"></script>
+<script src="/static/widget/kindeditor/src/config.js"></script>
+<script src="/static/widget/kindeditor/src/event.js"></script>
+<script src="/static/widget/kindeditor/src/html.js"></script>
+<script src="/static/widget/kindeditor/src/selector.js"></script>
+<script src="/static/widget/kindeditor/src/node.js"></script>
+<script src="/static/widget/kindeditor/src/range.js"></script>
+<script src="/static/widget/kindeditor/src/cmd.js"></script>
+<script src="/static/widget/kindeditor/src/widget.js"></script>
+<script src="/static/widget/kindeditor/src/edit.js"></script>
+<script src="/static/widget/kindeditor/src/toolbar.js"></script>
+<script src="/static/widget/kindeditor/src/menu.js"></script>
+<script src="/static/widget/kindeditor/src/colorpicker.js"></script>
+<script src="/static/widget/kindeditor/src/uploadbutton.js"></script>
+<script src="/static/widget/kindeditor/src/dialog.js"></script>
+<script src="/static/widget/kindeditor/src/tabs.js"></script>
+<script src="/static/widget/kindeditor/src/ajax.js"></script>
+<script src="/static/widget/kindeditor/src/main.js"></script>
+<script src="/static/widget/kindeditor/lang/zh-CN.js"></script>
+<script>
+			KindEditor.ready(function(K) {
+				K.create('textarea', {
+					loadStyleMode : false
+				});
+				K('#J_show').click(function(e) {
+					K('#J_editorArea').show();
+				});
+				K('#J_hide').click(function(e) {
+					K('#J_editorArea').hide();
+				});
+			});
+		</script>
+</body>
+</html>
